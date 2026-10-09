@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
+import { portrait } from "@/data/content";
 import { ThemeToggle } from "./theme-toggle";
 
 const links = [
@@ -33,9 +35,21 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <nav aria-label="Primary" className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <a href="#hero" className="text-sm font-semibold tracking-[0.2em] text-zinc-900 dark:text-zinc-50">
-          AS
+      <nav aria-label="Primary" className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-1.5 sm:px-6">
+        <a href="#hero" className="flex shrink-0 flex-col items-center gap-0.5">
+          <Image
+            src={portrait.src}
+            alt={portrait.alt}
+            width={portrait.width}
+            height={portrait.height}
+            preload
+            sizes="40px"
+            className="size-10 rounded-full border border-zinc-300 object-cover shadow-sm dark:border-zinc-500"
+            style={{ objectPosition: "center 46%" }}
+          />
+          <span className="whitespace-nowrap text-[10px] font-medium leading-none tracking-wide text-zinc-700 dark:text-zinc-200">
+            {portrait.caption}
+          </span>
         </a>
         <div className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (

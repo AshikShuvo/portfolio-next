@@ -66,6 +66,14 @@ export const personalInfo: PersonalInfo = {
   story: "A full-stack TypeScript engineer who architects production platforms end to end, from SSR front ends to NestJS APIs and job queues, and builds AI-natively.",
 };
 
+export const portrait = {
+  src: "/ashik-shuvo.webp",
+  alt: "Portrait of Ashik Ahmmed Shuvo, a software engineer, in a dark suit",
+  caption: personalInfo.name,
+  width: 256,
+  height: 256,
+} as const;
+
 export const productionWork: ProductionWork[] = [
   {
     name: "Peppes Pizza Customer Portal",
