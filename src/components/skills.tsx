@@ -3,7 +3,7 @@ import { skills } from "@/data/content";
 const tierStyles: Record<string, string> = {
   Expert: "bg-indigo-100 text-indigo-950 dark:bg-indigo-950 dark:text-indigo-100",
   Strong: "bg-zinc-200 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100",
-  Growing: "bg-amber-100 text-amber-950 dark:bg-amber-950 dark:text-amber-100",
+  "AI / LLM": "bg-amber-100 text-amber-950 dark:bg-amber-950 dark:text-amber-100",
 };
 
 export function Skills() {
@@ -15,8 +15,8 @@ export function Skills() {
         </h2>
         <div className="mt-10 space-y-8">
           {skills.map((skillTier) => (
-            <section key={skillTier.tier} aria-labelledby={`skills-${skillTier.tier}`}>
-              <h3 id={`skills-${skillTier.tier}`} className="text-xl font-semibold text-zinc-950 dark:text-white">
+            <section key={skillTier.tier} aria-labelledby={`skills-${skillTier.tier.replace(/\W+/g, "-")}`}>
+              <h3 id={`skills-${skillTier.tier.replace(/\W+/g, "-")}`} className="text-xl font-semibold text-zinc-950 dark:text-white">
                 {skillTier.tier}
               </h3>
               <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{skillTier.description}</p>
