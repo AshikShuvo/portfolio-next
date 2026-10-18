@@ -63,7 +63,7 @@ export const personalInfo: PersonalInfo = {
   linkedin: "https://linkedin.com/in/ashik-ahmmed-shuvo-280646140",
   github: "https://github.com/AshikShuvo",
   headline: "Senior Software Engineer | Full-Stack TypeScript (Vue/Nuxt, React/Next.js, NestJS) | LLM Integration",
-  story: "A full-stack TypeScript engineer who architects production platforms end to end, from SSR front ends to NestJS APIs and job queues, and builds AI-natively.",
+  story: "I build fast, production-grade web platforms in TypeScript, from Nuxt and Next.js front ends to NestJS APIs, job queues and LLM-powered features.",
 };
 
 export const productionWork: ProductionWork[] = [
@@ -93,20 +93,20 @@ export const productionWork: ProductionWork[] = [
 
 export const impacts: Impact[] = [
   {
-    metric: "about 40%",
-    description: "Faster page loads through SSR/SSG, lazy loading, image optimization, caching and Gzip/Brotli compression",
+    metric: "6 years",
+    description: "Building production web platforms for international clients",
   },
   {
-    metric: "about 40%",
-    description: "Faster builds from a reusable component and composable library adopted across projects",
+    metric: "80+",
+    description: "Restaurants served by the Peppes Pizza ordering platform I architected",
   },
   {
-    metric: "25%",
-    description: "Fewer user-reported UI issues after the TypeScript migration",
+    metric: "4M+",
+    description: "Pizzas a year sold by Norway's largest pizza chain, the platform's client",
   },
   {
-    metric: "30%",
-    description: "Fewer bug reports from code reviews and mentoring",
+    metric: "27",
+    description: "Playwright E2E specs covering the Spice-me ordering platform, plus Jest/Vitest unit tests",
   },
 ];
 
@@ -118,8 +118,7 @@ export const experience: Experience[] = [
     period: "Dec 2021 – Present",
     highlights: [
       "Lead front-end architecture for enterprise web applications for international clients (Norway's largest pizza chain, an IoT device-management platform) using Vue 3/Nuxt 3, React and TypeScript, with AWS Amplify for real-time features. Cut page load times by 40% through SSR/SSG, lazy loading, image optimization, caching and Gzip/Brotli compression.",
-      "Designed a reusable component and composable library (Vue composables, React hooks) adopted across multiple projects, reducing build time for subsequent projects by about 40%.",
-      "Owned authentication and payment integration for a high-traffic e-commerce portal: Vipps login, SMS OTP and Microsoft MSAL for personal and business accounts with role-based access, plus Vipps, card and invoice payments.",
+      "Designed a reusable component and composable library (Vue composables, React hooks) adopted across multiple projects, reducing development time for subsequent projects by about 40%.",
       "Drove TypeScript adoption across front-end codebases, contributing to a 25% reduction in user-reported interface issues.",
       "Raised engineering quality through code reviews and mentoring engineers, contributing to a 30% reduction in bug reports.",
     ],
@@ -169,7 +168,7 @@ export const projects: Project[] = [
     url: "https://github.com/AshikShuvo/cal-track-be",
     tech: ["NestJS", "OpenAI Vision", "PostgreSQL/Prisma", "Passport", "Jest"],
     description:
-      "REST API that estimates nutrition from meal photos with an OpenAI vision model, with Google/Facebook OAuth, hierarchical RBAC, daily/monthly/yearly reports and about 97 unit tests.",
+      "REST API that estimates nutrition from meal photos with an OpenAI vision model, with Google/Facebook OAuth, hierarchical RBAC, daily/monthly/yearly reports and 97 unit tests.",
   },
   {
     name: "Admission Agency Management System",
@@ -198,9 +197,6 @@ export const skills: SkillTier[] = [
       "i18n (next-intl, Nuxt i18n)",
       "SSR/SSG/ISR",
       "AWS Amplify",
-      "Vipps",
-      "Microsoft MSAL",
-      "SMS OTP",
       "RBAC/ACL design",
     ],
   },
@@ -215,7 +211,6 @@ export const skills: SkillTier[] = [
       "TanStack Query",
       "React Hook Form + Zod",
       "shadcn/ui",
-      "Radix",
       "NestJS",
       "Node.js/Express",
       "REST",
@@ -233,22 +228,17 @@ export const skills: SkillTier[] = [
       "React Testing Library",
       "Playwright (page-object model)",
       "Docker",
-      "Docker Compose",
       "GitHub Actions CI/CD",
       "Vercel",
       "Render",
-      "Railway",
       "Turborepo",
-      "pnpm/Bun workspaces",
       "Sentry",
-      "Firebase Analytics",
-      "Cloudinary",
       "Git",
     ],
   },
   {
-    tier: "Growing",
-    description: "Early-stage LLM integration and AI-native development",
+    tier: "AI / LLM",
+    description: "LLM features in shipped projects and AI-assisted development",
     items: [
       "OpenAI API (vision)",
       "Gemini API",
